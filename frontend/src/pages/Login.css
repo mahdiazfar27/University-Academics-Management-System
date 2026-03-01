@@ -1,0 +1,147 @@
+/* src/pages/Login.css */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #F4F7FA; /* Light gray bg from design */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background: white;
+  width: 400px;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+  text-align: left;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.header-icon {
+  font-size: 40px;
+  color: #101828;
+}
+.header h2 {
+  margin: 10px 0 5px;
+  color: #102A43; /* Dark Navy */
+}
+.header p {
+  color: #627D98;
+  font-size: 14px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 14px;
+  color: #334E68;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+
+.input-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.icon-left {
+  position: absolute;
+  left: 12px;
+  color: #829AB1;
+}
+
+.input-field {
+  width: 100%;
+  padding: 12px 12px 12px 38px; /* Space for icon */
+  border: 1px solid #D9E2EC;
+  border-radius: 6px;
+  font-size: 14px;
+  outline: none;
+  transition: border 0.3s;
+}
+
+.input-field:focus {
+  border-color: #0FBA81; /* IUMS Green */
+}
+
+/* Specific styling for Select Dropdown */
+.select-wrapper select {
+  width: 100%;
+  padding: 12px 12px 12px 38px;
+  border: 1px solid #D9E2EC;
+  border-radius: 6px;
+  background: white;
+  font-size: 14px;
+}
+
+/* Visibility Toggle */
+.icon-right {
+  position: absolute;
+  right: 12px;
+  cursor: pointer;
+  color: #829AB1;
+}
+
+.options-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  margin-bottom: 24px;
+}
+
+.forgot-link {
+  color: #102A43;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.login-btn {
+  width: 100%;
+  padding: 14px;
+  background-color: #0FBA81; /* The exact green from your image */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  transition: background 0.3s;
+}
+
+.login-btn:hover {
+  background-color: #099263;
+}
+
+.footer-links {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 12px;
+  color: #829AB1;
+}
+
+.error-msg {
+  background-color: #ffeaea;
+  color: #d8000c;
+  padding: 10px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-bottom: 15px;
+  border-left: 3px solid #d8000c;
+}
